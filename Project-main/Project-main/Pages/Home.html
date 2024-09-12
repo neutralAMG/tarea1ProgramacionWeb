@@ -39,15 +39,17 @@
           </p>
         </div>
       </div>
-      <div class="main_div main_link">
+      <div class="main_div main_link main_special1">
           <h2>Values</h2>
       </div>
-      <div class="main_div big2 main_link">
+      <div class="main_div big2 main_link main_special2">
           <h2>Projects</h2>
       </div>
       <div class="main_div main_link">
-          <h2>Contact</h2>
-          <p></p>  
+          <h2>Contact</h2>  
+      </div>
+      <div class="main_div main_link">
+        <h2>Skills</h2>
       </div>
     </main>
     <script defer>
@@ -58,13 +60,16 @@
         console.log("click");
       });
       divs[2].addEventListener("click", () => {
-        window.location.href = "/Project-main/Project-main/Pages/Skills.html";
+        window.location.href = "/Project-main/Project-main/Pages/Projects.html";
         console.log("click");
       });
       divs[3].addEventListener("click", () => {
         window.location.href = "/Project-main/Project-main/Pages/Contact.html";
         console.log("click");
       });
+      divs[4].addEventListener("click", ()=>{
+        window.location.href = "/Project-main/Project-main/Pages/Skills.html"
+      })
     </script>
   </body>
 </html>

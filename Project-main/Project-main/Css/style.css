@@ -29,9 +29,10 @@ body {
 .goback * img{
   width: 50px;
   transition: all 0.5ms ease-in;
+  border-radius:50%;
 }
 .goback * img:hover{
-  width: 55px;
+ background-color: bisque;
 }
 
 
@@ -139,6 +140,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit,  minmax(200px, 1fr) );
    gap: 10px;
+   cursor: pointer;
 }
 
 .div_value {
@@ -151,7 +153,7 @@ body {
 }
 .div_value:hover{
 border-radius: 20%;
-margin: 0px 10px;
+padding: 10px;
 }
 
  .div:hover{
@@ -160,21 +162,25 @@ margin: 0px 10px;
 
 .main_project{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
   grid-template-rows: 1fr 1fr;
   place-items: center;
-   gap: 10px;
-   margin-top: 90px;
+   gap: 19px;
    height: 100%;
+   padding: 50px;
 }
 .project{
   height: 100%;
   border: 1px solid black;
   width: 100%;
   text-align: center;
+ 
   transition: all 0.1s ease-in;
+  cursor: pointer;
+  
 }
 .project:hover{
+   background-color: beige;
   transform: rotate(-5deg);
 }
 .project:active{

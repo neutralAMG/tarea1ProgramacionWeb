@@ -81,6 +81,31 @@ body {
 .main_div > img {
   width: 100px;
 }
+@media  screen and (max-width: 700px) {
+ .main{
+  display: grid;
+  grid-template-columns: 1fr;
+ } 
+ .main_div:hover{
+  -webkit-box-shadow: 1px 8px 10px 15px rgba(0,0,0,0.82);
+  -moz-box-shadow: 1px 8px 10px 15px rgba(0,0,0,0.82);
+  box-shadow: 1px 8px 10px 15px rgba(0,0,0,0.82);
+ }
+.big1{
+  grid-column: auto;
+  flex-direction: column;
+}
+.main_div_img{
+  place-self: center;
+}
+.big2{
+  grid-column: auto;
+  grid-row: auto;
+}
+
+}
+
+
 .main_values{
   max-width: 100%;
   height: 100vh;
@@ -99,4 +124,18 @@ body {
 
  .div:hover{
   border-radius: 20px;
+}
+
+.main_project{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  
+}
+.project{
+  height: 100%;
+}
+.project_img{
+  width: 200px;
 }

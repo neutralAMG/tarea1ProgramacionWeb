@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Css/style.css" />
+    <link rel="stylesheet" href="/Project-main/Project-main/Css/style.css" />
     <title>Home</title>
   </head>
   <body>
@@ -20,7 +20,7 @@
     </nav>
     <main class="main">
       <div class="main_div big1">
-        <img src="/Images/Picture1.png" class="main_div_img" />
+        <img src="/Project-main/Project-main/Images/Picture1.png" class="main_div_img" />
         <div>
           <h2>Alejandro Daniel Moscoso Guerrero</h2>
           <p>
@@ -40,35 +40,29 @@
         </div>
       </div>
       <div class="main_div main_link">
-        <a href="/Pages/Values.html">
           <h2>Values</h2>
-        </a>
       </div>
       <div class="main_div big2 main_link">
-        <a href="/Pages/Skills.html">
           <h2>Projects</h2>
-        </a>
       </div>
       <div class="main_div main_link">
-        <a href="/Pages/Contact.html">
           <h2>Contact</h2>
-          <p></p>
-        </a>
+          <p></p>  
       </div>
     </main>
     <script defer>
       const divs = document.getElementsByClassName("main_div");
 
       divs[1].addEventListener("click", () => {
-        window.location.href = "/Pages/Values.html";
+        window.location.href = "/Project-main/Project-main/Pages/Values.html";
         console.log("click");
       });
       divs[2].addEventListener("click", () => {
-        window.location.href = "/Pages/Skills.html";
+        window.location.href = "/Project-main/Project-main/Pages/Skills.html";
         console.log("click");
       });
       divs[3].addEventListener("click", () => {
-        window.location.href = "/Pages/Contact.html";
+        window.location.href = "/Project-main/Project-main/Pages/Contact.html";
         console.log("click");
       });
     </script>

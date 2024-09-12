@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav_leftDiv">
+        <h1 class="nav_leftDiv_title">Personal Web</h1>
+      </div>
+      <div class="nav_rightDiv">
+        <ul class="nav_leftDiv_list">
+          <li><a href="#">Github </a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="main_div big1">
+        <img src="/Images/Picture1.png" class="main_div_img" />
+        <div>
+          <h2>Alejandro Daniel Moscoso Guerrero</h2>
+          <p>
+            I am a Junior Software Developer with a specialization in full-stack
+            web development. I possess a solid understanding of both front-end
+            and back-end technologies, which enables me to build comprehensive
+            web applications that integrate seamless user interfaces with robust
+            server-side functionality. Being fluent in various programming
+            languages, I am well-versed in key languages and frameworks
+            essential for full-stack development. These may include front-end
+            languages like HTML, CSS, JavaScript, and libraries such as React,
+            as well as back-end technologies like c#, .net. My fluency extends
+            to working with databases, whether it's SQL-based systems like SQL
+            Server or noSql, allowing me to efficiently manage data and ensure
+            high-performance in web applications.
+          </p>
+        </div>
+      </div>
+      <div class="main_div main_link">
+        <a href="/Pages/Values.html">
+          <h2>Values</h2>
+        </a>
+      </div>
+      <div class="main_div big2 main_link">
+        <a href="/Pages/Skills.html">
+          <h2>Projects</h2>
+        </a>
+      </div>
+      <div class="main_div main_link">
+        <a href="/Pages/Contact.html">
+          <h2>Contact</h2>
+          <p></p>
+        </a>
+      </div>
+    </main>
+    <script defer>
+      const divs = document.getElementsByClassName("main_div");
+
+      divs[1].addEventListener("click", () => {
+        window.location.href = "/Pages/Values.html";
+        console.log("click");
+      });
+      divs[2].addEventListener("click", () => {
+        window.location.href = "/Pages/Skills.html";
+        console.log("click");
+      });
+      divs[3].addEventListener("click", () => {
+        window.location.href = "/Pages/Contact.html";
+        console.log("click");
+      });
+    </script>
+  </body>
+</html>
